@@ -1,0 +1,135 @@
+nav {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  color: aliceblue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+
+  max-width: 100;
+  width: 30%;
+
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100;
+  width: 50%;
+}
+.nav-links a {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 0px;
+}
+
+.nav-links a:hover {
+  background-color: rgb(8, 129, 243);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  color: aliceblue;
+  transition: 0.2s;
+}
+
+.burger {
+  font-size: 40px;
+  display: none;
+}
+.search input {
+  border-radius: 10px;
+  height: 30px;
+  border-color: honeydew;
+}
+
+@media all and (max-width: 700px) {
+  .logo {
+    font-size: 25px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    max-width: 100;
+    width: 40%;
+
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav .burger {
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  nav .nav-links {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(28, 178, 238);
+    color: white;
+    padding: 40px;
+    width: 60%;
+    transform: translateX(-500px);
+    transition: 0.5s ease-in-out;
+  }
+
+  nav .nav-links li {
+    color: white;
+    padding: 30px;
+    border-bottom: 1px solid white;
+  }
+}
+
+@media all and (max-width: 880px) {
+  .search {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media all and (max-width: 820px) {
+  .search {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media all and (max-width: 601px) {
+  .logo {
+    font-size: 25px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    max-width: 100;
+    width: 70%;
+
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .logo {
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    max-width: 100;
+    width: 80%;
+
+    justify-content: center;
+  }
+}
